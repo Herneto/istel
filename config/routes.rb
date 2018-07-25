@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   match 'que_istel' => 'home#que_istel', via: 'get'
   match 'home' => 'home#index', via: 'get'
   match 'contacto' => 'contactos#new', via: 'get'
+  match 'historia' => 'home#historia', via: 'get'
 end

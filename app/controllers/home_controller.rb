@@ -9,5 +9,9 @@ class HomeController < ApplicationController
     
     def que_istel
       
-    end  
+    end 
+    
+    def historia
+      
+    end 
 end
