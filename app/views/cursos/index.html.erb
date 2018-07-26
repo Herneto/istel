@@ -1,31 +1,38 @@
-<p id="notice"><%= notice %></p>
+<section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h1>Nossos Cursos</h1>
+            </div>
+          </div>
+        </div>
+</section>
 
-<h1>Cursos</h1>
+      <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="probootstrap-flex-block">
+                <div class="probootstrap-text probootstrap-animate">
+                  <div class="text-uppercase probootstrap-uppercase"></div>
+                  <h3>Bacharel em Teologia</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo veniam labore ratione illo vero voluptate a deserunt incidunt odio aliquam commodi blanditiis voluptas error non rerum temporibus optio accusantium!</p>
+                  <p><a href="#" class="btn btn-primary">Saber Mais</a> <span class="enrolled-count">928 estudantes</span></p>
+                </div>
+                <div class="probootstrap-image probootstrap-animate" style="background-image: url(img/slider_3.jpg)">
+                  <a href="https://vimeo.com/45830194" class="btn-video popup-vimeo"><i class="icon-play3"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<table>
-  <thead>
-    <tr>
-      <th>Titulo</th>
-      <th>Description</th>
-      <th>Qt estudantes</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @cursos.each do |curso| %>
-      <tr>
-        <td><%= curso.titulo %></td>
-        <td><%= curso.description %></td>
-        <td><%= curso.qt_estudantes %></td>
-        <td><%= link_to 'Show', curso %></td>
-        <td><%= link_to 'Edit', edit_curso_path(curso) %></td>
-        <td><%= link_to 'Destroy', curso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Curso', new_curso_path %>
+      <section class="probootstrap-section">
+        <div class="container">
+          <%= render 'home/cursos'%>          
+        </div>
+      </section>
+      
+      
+     

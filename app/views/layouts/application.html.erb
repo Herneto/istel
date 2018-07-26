@@ -85,16 +85,20 @@
       </nav>
 
       <%= yield %>
-      <section class="probootstrap-cta">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Entre em contacto conosco!</h2>
-              <a href="/contacto" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Contacte-nos</a>
+
+      <% if controller_name != "contactos" %>
+          <section class="probootstrap-cta">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Entre em contacto conosco!</h2>
+                <a href="/contacto" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Contacte-nos</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>			
+			<% end %>				 
+      
       <footer class="probootstrap-footer probootstrap-bg">
         <div class="container">
           <div class="row">
@@ -124,7 +128,7 @@
             </div>
             <div class="col-md-4">
               <div class="probootstrap-footer-widget">
-                <h3>Contact Info</h3>
+                <h3>Endereço</h3>
                 <ul class="probootstrap-contact-info">
                     <span><i class="icon-location2"></i>Av. Comandante Cowboy, Lubango, Huila-Angola</span></br>
                     <span><i class="icon-phone2"></i>+244 261 254 540</span></br>
