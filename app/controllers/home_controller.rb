@@ -14,4 +14,7 @@ class HomeController < ApplicationController
     def historia
       
     end 
+
+    def galeria
+    end
 end
